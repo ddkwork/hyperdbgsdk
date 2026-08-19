@@ -13,6 +13,7 @@ func TestGenerate(t *testing.T) {
 		PackageName:      "hyperdbgsdk",
 		HeaderOrder:      []string{"HyperDbgSdk.h"},
 		ExtraIncludeDirs: []string{"clone", "clone/SDK/headers"},
+		RecurseHeaders:   true,
 		Predefined: `
 #include <windows.h>
 `,
